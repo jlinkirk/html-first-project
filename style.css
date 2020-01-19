@@ -1,0 +1,176 @@
+body {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 209, 209);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, arial;
+    font-variant: small-caps;
+    border-left-style: outset;
+    border-right-style: outset;
+    border-right-color: whitesmoke;
+    border-left-color: whitesmoke;
+    border-right-width: 5px;
+    border-left-width: 5px;
+    border-top-style: outset;
+    border-top-color: whitesmoke;
+    border-top-width: 15px;
+    border-bottom-style: outset;
+    border-bottom-color: whitesmoke;
+    border-bottom-width: 15px;
+}
+p {
+    border-top-style: solid;
+    border-bottom-style: hidden;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-color: thistle;
+    border-bottom-color: thistle;
+}
+h1 {
+    color:#ffffff;
+    background-color: #008080;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: gray;
+    text-decoration-thickness: auto;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 15px;
+    border-style: outset;
+    border-color: cadetblue;
+}
+h2 {
+    color:#ffffff;
+    background-color: #008080;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-style: outset;
+    border-color: cadetblue;
+}
+h3 {
+    color:#ffffff;
+    background-color: #008080;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    border-style: outset;
+    border-color: cadetblue;
+}
+textarea {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-variant: small-caps;
+}
+table {
+    background-color: #008080;
+    border-style: outset;
+}
+li {
+    color: black;
+}
+#one {
+    text-align: center;
+}
+#twotextbox {
+    text-align: center;
+}
+#threetextbox {
+    text-align: center;
+}
+a:link {
+    color: blue;
+}
+a:active {
+    color:purple;
+}
+a:visited {
+    color: pink;
+}
+a:hover {
+    color: black;
+}
+input:focus{
+    background: lightcyan;
+}
+textarea:focus {
+    background: darkslategrey;
+}
+p:first-of-type {
+    font-weight: bold;
+    font-size: 30px;
+}
+/*Not Doing anything^because there are other editors in place*/
+#onep,#twop {
+    font: 14px/1.5 "Times New Roman", times, serif;
+    padding: 30px 10px;
+    border: 1px black solid;
+    border-width: 1px 5px 5px 1px;
+    border-color: red green blue yellow;
+    margin: 10px 50px;
+}
+
+/*Goes^Top, Right, Bottom, Left. Clockwise*/
+
+body {
+    background-image: url(http://www.htmldog.com/images/bg.gif);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: local;
+}
+.sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    height: 70px;
+    top: 0;
+} /* moves the class as you scroll*/
+a {
+    display: block;
+    padding: 5px 5px;
+} /* Creates a box for links, can do specific ones with classes or id's*/
+h1:first-letter {
+    font-size: 40px;
+    float: none;
+}
+h2:first-letter{
+    font-size: 30px;
+    float: inline-start
+}
+h3::first-letter{
+    font-size: 20px;
+    float: left;
+}
+p::first-line{
+    font-weight: 600;
+}/*The CSS 3 specs suggest pseudo elements should include two colons, so p::first-line as opposed to p:first-line.*/
+/*Some older ones might not recognize the double colon, so a single colon is usually still best*/
+li:before {
+    content: "-"
+}/*You can add content from css, but it's not to be used much*/
+li {display: block}
+/*Just using this^ to get rid of the dots and numbers and then replace it with -'s*/
+textarea:before {
+    content: "Textbox";
+}
+#navigation {
+    float: unset;
+    width: 200px;
+}
+
+#content {
+    float: inline-start;
+}
+#footer {
+    clear:both
+}/*Will appear under all columns*/

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Doing this for my girl</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body><center>
+        <h1 id="Title">This is my first web page, I made this title using the h1 tag, can only use h1 once</h1>
+        <h2>What is this, can possibly use h2 more than once
+            <h3>Did this work? You can make subheadings by increasin the number after h by 1, so this is h3</h1>
+        </h2>
+        A Simple text page put together using HTML and for notes
+        <h2>Why am I doing this</h2>
+        <p class="sticky">To Learn HTML</p>
+        <p id="onep">Did this work? <br> Watch this sweet girl!<br>
+        Pressing enter doesn't work, have to do "< br >" or paragraph < P ></p>
+        <p>This is a new paragraph, I can break it into another line while keeping the same paragraph with the br tag
+            <br> New line see
+            <br> You can use an em tag to italicize things and strong tag to bold things, but they are a little different than normal apparently?
+            <br> <em>HTML is not for presentation, but can still do some things</em>
+            <br> <strong>This should be bold</strong>
+        </p>
+        <p>
+            Time to try out lists
+            <br> Use UL lowercase tag for a bullet point list and ol for ordered lists, us li for each list item</p></center>
+            <ul>
+                <li>Let's try this list things</li>
+                <li>Second line</li>
+            </ul>
+            <ol>
+                <li>This should make an ordered list</li>
+                <li>Second Line
+                    <ol>
+                        <li>Let's try a list within a list</li>
+                        <li> Pretty easy</li>
+                        <ul> <li>A list within a list within a list</li></ul>
+                    </ol>
+                </li>
+            </ol>
+
+        <center><p id="twop">
+            Time to try links <a href="http://www.htmldog.com">HTML</a>
+            <br>The way to format it is putting a < and then a href=(URL within quotes)> and then Name the link after closing the tag without a space and then end with closing the a tag
+            <br>Lets try to link my own page <a href="file:///home/jlin360/html/myfirstpage.html">My Own Site</a>
+            <br>You can add id to tags, after the tag add id="Name" and then to link to that part of the page < a href="#Name">Go to Name and close the tag
+            <br> Test link to a different part on my page, <a href="#Title">First Heading</a>
+            You can put an image in with the img tag and then src="URL" add width="#" height="#" alt="HTML Dog">
+            Let's try it, img width 120 and heigh 90 
+            <br> <img src="http://www.htmldog.com/badge1.gif" width="120" height="90" alt="HTML Dog">
+            <br> <img src="file:///home/jlin360/Pictures/mount-rainier.jpeg" alt="Mount Rainier">
+            <br> You don't need to resize it. 
+            Let's see if a gif will work.
+            <br><img src="file:///home/jlin360/Pictures/Michaelscott.gif" alt="Michael Scott Gif">
+            <br> Different picture file types, you can center things^ with the center tag
+            <br> <ol>
+                <li>JPEGs are typically used for images such as photographs.</li>
+                <li>GIFs are typically used for images with solid colors, such as icons or logos. Allows transparent pixels</li>
+                <li>PNGs are typically used for versatile images in more complex designs BUT they are not fully supported by some older browsers.</li>
+            </ol>
+        </p><center>
+        <table>
+            <tr>
+                <td>To start this use a table tag</td>
+                <td>Than each row has a tr tag</td>
+                <td>Each Cell starts with separate td tags</td>
+            </tr>
+            <tr>
+                <td>Filler</td>
+                <td>Filler</td>
+                <td>Filler</td>
+            </tr>
+            <tr>
+                <td>Filler</td>
+                <td>Filler</td>
+                <td>Filler3</td>
+            </tr>
+            <tr>
+                <td>What does this do</td>
+                <td>You can make tables</td>
+                <td>Interesting</td>
+            </tr>
+        </table>
+        <input type="text" value="Username">
+        <input type="password">
+        <br>Check to stay logged in<input type="checkbox"> Check for fun <input type="checkbox" checked>
+        <br><input type="radio">That's a radio button?
+        <br><form><input type="submit" value="The Button Worked"></form>
+        <p>Needs to be inside a form tag</p>
+            <textarea rows="5" cols="20" id="one">Some Text, Use textarea tag... Interesting</textarea>
+            <br><select>
+                <option>Pick This</option>
+                <option>Or This</option>
+                <option value="third option">Option 3</option>
+            </select>
+            <br><textarea rows="10" cols="45" id="twotextbox">Names-All of the tags mentioned above will look very nice presented on the page but if you hook up your form to a form-handling script, they will all be ignored. This is because the form fields need names. So to all of the fields, the attribute name needs to be added, for example <input type="text" name="talkingsponge">.</textarea>
+        <h1>Time for my CSS/Style Notes</h1>
+        <p style="color:blueviolet">
+            Hello? Ha it works! This is in-line styling which should be avoided because HTML is for text/organizing mostly
+            <br>Internal Styling is put in the head and affects the whole document.
+            <br><textarea rows="15" cols="35" id="threetextbox">
+<style>
+|p {
+    |color: red;
+|}
+|a {
+    |color: blue;
+|}
+</style>
+            </textarea>
+            <p>This should make all of the paragraphs in the page red and all of the links blue. But an extrernal CSS File is still best.</p>
+            <textarea rows="25" cols="60" id=fourtextbox>
+External styles are used for the whole, multiple-page website. There is a separate CSS file, which will simply look something like:
+
+
+|p {
+    |color: red;
+|}
+|
+|a {
+    |color: blue;
+|}
+If this file is saved as “style.css” in the same directory as your HTML page then it can be linked to in the HTML like this:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Example</title>
+    <link rel="stylesheet" href="style.css">
+...
+            </textarea>
+            <br>
+            <textarea rows="13" cols="45" id=fivetextbox>
+The following values, to specify full-on as red-as-red-can-be, all produce the same result:
+
+
+|rgb(255,0,0)
+|rgb(100%,0%,0%)
+|#ff0000
+|#f00
+Predefined color names include aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, and yellow. transparent is also a valid value.
+            </textarea>
+        </center>
+    </body>
+</html>
+<div id="navigation">
+    <ul>
+        <li><a href="file:///home/jlin360/html/myfirstpage.html">This</a></li>
+        <li><a href="file:///home/jlin360/html/myfirstpage.html">That</a></li>
+        <li><a href="file:///home/jlin360/html/myfirstpage.html">The Other</a></li>
+    </ul>
+</div>
+
+<div id="content">
+    <h1>These are made using div tags</h1>
+    <p>I guess div tags are old school, sectioning is much better now?</p>
+    <p>More Notes Here</p>
+</div>
+<div id="footer">
+    <p>Footer!</p>
+</div>
+<form>
+    .
+    More form elements
+    .
+</form>
+First name:<br>
+<input type="text" name="firstname"><br>
+Last name:<br>
+<input type="text" name="lastname">
+<br><input type="submit">
+<br><input type="radio" name="Test" value="Test">Test <br>
+<input type="radio" name="Test" value="Test 2">Test2
